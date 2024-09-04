@@ -1,0 +1,98 @@
+/* Home.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .home {
+    color: #fff;
+    background-color: #282727; /* Dark background for the entire page */
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    
+  }
+  
+  .btn-primary {
+    background-color: darkgreen; /* Grassgreen color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #228B22; /* Darker green on hover */
+  }
+  
+  /* .btn-secondary {
+    background-color: #2b7a78;
+    margin-top: 20px;
+  } */
+  
+  .btn-secondary:hover {
+    background-color: #1f6f6a;
+  }
+  
+  .image-container {
+    margin-top: 120px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    border: 5px solid #fff; /* Optional border */
+  }
+  
+  .about-me {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-me p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
