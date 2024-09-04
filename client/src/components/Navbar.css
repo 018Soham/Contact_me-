@@ -10,6 +10,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 .navbar-logo {
@@ -27,7 +28,6 @@
 
 .navbar-links li {
   display: inline;
-  
 }
 
 .navbar-links a {
@@ -43,7 +43,7 @@
 
 .navbar-hire-me {
   background-color: darkgreen; /* Button color */
-  color:black;
+  color: black;
   border: none;
   padding: 10px 20px;
   margin-right: 70px;
@@ -53,5 +53,35 @@
 }
 
 .navbar-hire-me:hover {
-  background-color: yellow; /* Darker green on hover */
+  background-color: yellow; /* Yellow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-hire-me {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .navbar-hire-me {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
